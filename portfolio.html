@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Homepage - Welcome</title>
+  </head>
+  <body>
+    <header class="fixed w-full pt-4 z-50">
+      <div class="container">
+        <div class="row justify-end h-16 items-center">
+          <div class="menu-toggle fixed burger-toggle" :class="{ 'is-open': active }" @click="showMenu()">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <ul class="primary-menu list-reset flex flex-col justify-between text-4xl font-medium items-center" :class="{ 'is-active' : active }">
+      <li><a class="text-black hover:text-purple" href="">Inicio</a></li>
+      <li><a class="text-black hover:text-purple" href="">Portafolio</a></li>
+      <li><a class="text-black hover:text-purple" href="">Contacto</a></li>
+    </ul>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
