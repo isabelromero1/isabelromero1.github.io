@@ -8,10 +8,13 @@
     <title>Homepage - Welcome</title>
   </head>
   <body>
-    <header class="fixed w-full pt-4 z-50">
+    <header class="w-full z-50 shadow">
       <div class="container">
-        <div class="row justify-end h-16 items-center">
-          <div class="menu-toggle fixed burger-toggle" :class="{ 'is-open': active }" @click="showMenu()">
+        <div class="row justify-start  h-16 items-center">
+          <div class="brand">
+            <h1 class="m-0">Isabel Romero</h1>
+          </div>
+          <div class="menu-toggle burger-toggle fixed menu-toggle--black">
             <div class="_layer -top"></div>
             <div class="_layer -mid"></div>
             <div class="_layer -bottom"></div>
@@ -19,11 +22,46 @@
         </div>
       </div>
     </header>
-    <ul class="primary-menu list-reset flex flex-col justify-between text-4xl font-medium items-center" :class="{ 'is-active' : active }">
-      <li><a class="text-black hover:text-purple" href="">Inicio</a></li>
-      <li><a class="text-black hover:text-purple" href="">Portafolio</a></li>
-      <li><a class="text-black hover:text-purple" href="">Contacto</a></li>
+    <ul class="primary-menu list-reset flex flex-col justify-between text-4xl font-medium items-center">
+      <li><a class="text-black hover:text-purple" href="index.html">Inicio</a></li>
+      <li><a class="text-black hover:text-purple" href="portfolio.html">Portafolio</a></li>
+      <li><a class="text-black hover:text-purple" href="mailto:isabelromero1@hotmail.com">Contacto</a></li>
     </ul>
+    <div class="container pt-8">
+      <h1>Portafolio</h1>
+      <div class="row">
+        <div class="is-1/3 pb-8">
+          <div class="portfolio-item shadow">
+            <div class="thumbnail" style="background-image: url('assets/images/Coffee.jpg');"></div>
+            <div class="portfolio-type py-2 px-4"><span>Ilustracion</span></div>
+          </div>
+        </div>
+        <div class="is-1/3">
+          <div class="portfolio-item shadow">
+            <div class="thumbnail" style="background-image: url('assets/images/blog-sh.jpg');"></div>
+            <div class="portfolio-type py-2 px-4"><span>Desarrollo Web</span></div>
+          </div>
+        </div>
+        <div class="is-1/3">
+          <div class="portfolio-item shadow">
+            <div class="thumbnail" style="background-image: url('assets/images/cotizador-sh.jpg');"></div>
+            <div class="portfolio-type py-2 px-4"><span>Desarrollow Web</span></div>
+          </div>
+        </div>
+        <div class="is-1/3">
+          <div class="portfolio-item shadow">
+            <div class="thumbnail" style="background-image: url('assets/images/Ghost.jpg');"></div>
+            <div class="portfolio-type py-2 px-4"><span>Ilustracion</span></div>
+          </div>
+        </div>
+        <div class="is-1/3">
+          <div class="portfolio-item shadow">
+            <div class="thumbnail" style="background-image: url('assets/images/Cup.jpg');"></div>
+            <div class="portfolio-type py-2 px-4"><span>Ilustracion</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/vue.js"></script>
     <script src="assets/js/app.js"></script>
   </body>

@@ -1,22 +1,17 @@
 'use strict';
 
-var menuToggle = new Vue({
-  el: '.menu-toggle',
-  data: {
-    active: false
-  },
-  methods: {
-    showMenu: function showMenu() {
-      this.active = !this.active;
-      menu.active = !menu.active;
-      console.log("Fui cliqueado");
-    }
-  }
-});
+// Vanilla JavaScript
+var menuToggle = document.querySelector('.menu-toggle'),
+    menu = document.querySelector('.primary-menu');
 
-var menu = new Vue({
-  el: '.primary-menu',
-  data: {
-    active: false
+menuToggle.addEventListener('click', function () {
+  if (this.classList.contains('menu-toggle--white')) {
+    this.classList.remove('menu-toggle--white');
+    this.classList.add('is-open');
+    menu.classList.add('is-active');
+  } else {
+    this.classList.add('menu-toggle--white');
+    this.classList.remove('is-open');
+    menu.classList.remove('is-active');
   }
 });

@@ -27695,7 +27695,7 @@ select.form-control-lg:not([size]):not([multiple]),
 }
 
 .burger-toggle ._layer {
-  background: #fff;
+  background: #222b2f;
   margin-bottom: 4px;
   border-radius: 2px;
   width: 30px;
@@ -27739,6 +27739,14 @@ select.form-control-lg:not([size]):not([multiple]),
   background: #222b2f;
 }
 
+.menu-toggle--white ._layer {
+  background: white;
+}
+
+.menu-toggle--black ._layer {
+  background: #222b2f;
+}
+
 .primary-menu {
   position: absolute;
   top: 0;
@@ -27747,6 +27755,7 @@ select.form-control-lg:not([size]):not([multiple]),
   padding-top: 80px;
   padding-bottom: 80px;
   background: rgba(255, 255, 255, .95);
+  z-index: 1000;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   -webkit-transition: -webkit-transform .35s;
@@ -27766,6 +27775,13 @@ body {
 
 .global-wrapper {
   background-image: linear-gradient(-135deg, rgba(198, 78, 255, .5) 0%, rgba(139, 21, 255, .5) 100%), url("../images/mountains.jpg");
+}
+
+.portfolio-item .thumbnail {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 576px) {
